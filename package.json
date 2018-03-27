@@ -1,0 +1,29 @@
+{
+  "name": "mongoosescraper",
+  "version": "1.0.0",
+  "description": "Web Scraper that makes use of Cheerio, NOSQL via Mongo and mongoose.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmccracken/mongooseScraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmccracken/mongooseScraper/issues"
+  },
+  "homepage": "https://github.com/rmccracken/mongooseScraper#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.0.11",
+    "morgan": "^1.9.0",
+    "request": "^2.85.0"
+  }
+}

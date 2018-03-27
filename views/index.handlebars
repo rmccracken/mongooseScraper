@@ -1,0 +1,35 @@
+
+  <div id="wrapper">
+    <h2>
+      <i>Richmond's Business News at your fingertips</i>
+    </h2>
+        <div class="row">
+          <div class="col-md-12">
+            {{#each articles}}
+              <div class="panel panel-default">
+                <div class="panel-heading row">
+                  <div class="col-xs-9">
+                   <a href={{this.link}}> <h3 class="panel-title pull-left">{{this.title}}</h3></a>
+                  </div>
+                  <div class="col-xs-3">
+                    <form action="/save" method="POST">
+                     <input id="article-title" type="hidden" name="title" value={{this.title}}> 
+                      <input id="article-link" type="hidden" name="link" value={{this.link}}>
+                      <input id="article-summary" type="hidden" name="summary" value={{this.summary}}>
+                      <button type="submit" class="btn btn-success pull-right">Save Article</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12>">
+                    <div class="panel-body">
+                      <p>{{this.summary}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    
